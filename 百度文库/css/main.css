@@ -1,0 +1,772 @@
+﻿*{margin: 0;padding: 0}
+ul,dl{
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+input{outline: none}
+img{border: none}
+body{
+    color: #666;
+    font-size: 13px;
+}
+span.icon{
+    display: block;
+    position: absolute;
+    background: url(../images/icon/bg_nav_0a3afb8.png) no-repeat 0 0;
+}
+/*  */
+header{
+    width: 100%;
+    min-width: 1200px;
+    height: 173px;
+    /* background-color: aqua; */
+}
+header .top{
+    width: 100%;
+    height: 32px;
+    border-bottom: #e6e6e6 1px solid;
+    /* background-color: chartreuse; */
+}
+    header .top .content{
+       width: 850px;
+       height: 32px;
+       float: right;
+       /* background-color: coral; */
+    }
+        header .top .left,header .top .right{
+            height: 32px;
+            float: left;
+            text-decoration: underline;
+        }
+        header .top .left a{
+            float: left;
+            height: 13px;
+            line-height: 13px;
+            margin-top: 8px;
+            margin-right: 25px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        header .top .left a.current{
+            font-weight: normal;
+            text-decoration: none;
+        }
+        header .top span{
+            float: left;
+            width: 1px;
+            height: 12px;
+            background-color: #e6e6e6;
+            margin-top: 9px;
+            margin-right: 22px;
+        }
+        header .top .right a{
+            float: left;
+            height: 13px;
+            line-height: 13px;
+            margin-top: 8px;
+            margin-right: 22px;
+            text-decoration: underline;
+            position: relative;
+        }
+        header .top .right a.vip{
+            margin-right: 32px;
+            font-weight: bold;
+            color: #e54d4b;
+        }
+        header .top .right a span.idea{
+            width: 14px;
+            height: 15px;
+            background-position: 0 0;
+            top: -9px;
+            left: -17px;
+        }
+
+        
+/*  */
+header .middle{
+    width: 100%px;
+    height: 104px;
+    /* background-color: darkorange; */
+}
+    header .middle .content{
+        width: 902px;
+        height: 104px;
+        margin: 0 auto;
+        /* background-color: blue; */
+    }
+        header .middle .content .logo{
+            float: left;
+            width: 135px;
+            /* 高度由里面的图片决定 */
+            overflow: hidden;
+            margin-top: 24px;
+            margin-right: 20px;
+            /* background-color: darksalmon; */
+        }
+
+        header .middle .content form{
+            float: left;
+            width: 639px;
+            height: 104px;
+            position: relative;
+            /* background-color: dodgerblue; */
+        }
+        header .middle .content form::after{
+            content: "2";
+            display: block;
+            width: 18px;
+            height: 18px;
+            text-align: center;
+            line-height: 18px;
+            color: white;
+            background-color: #21bb8b;
+            border: #32a47e 1px solid;
+            border-radius: 2px;
+            position: absolute;
+            top: 42px;
+            right: 112px;
+        }
+        header .middle .content .search{
+            float: left;
+            width: 524px;
+            height: 38px;
+            margin-top: 32px;
+            padding-left: 10px;
+            font-size: 16px;
+            border: #e6e6e6 1px solid;
+            border-right: none;
+        }
+        header .middle .content .submit{
+            width: 104px;
+            height: 40px;
+            margin-top: 32px;
+            background-color: #3385ff;
+            font-size: 16px;
+            color: white;
+            border: none;
+            outline: none;
+        }
+        header .middle .content label{
+            float: left;
+            height: 13px;
+            font-size: 12px;
+            margin-top: 9px;
+            margin-right: 22px;
+        }
+            header .middle .content label span{
+                display: inline-block;
+                height: 13px;
+                line-height: 13px;
+                vertical-align: top;
+                margin-left: 4px;
+            }
+
+        header .middle .content .reward{
+            float: left;
+            width: 104px;
+            height: 104px;
+            margin-left: 4px;
+            font-size: 16px;
+        }
+            header .middle .content .reward a{
+                display: block;
+                width: 102px;
+                height: 38px;
+                margin-top: 32px;
+                text-align: center;
+                line-height: 40px;
+                color: #3385ff;
+                border: #3385ff 1px solid;
+            }
+/*  */
+header .bottom{
+    width: 100%;
+    height: 36px;
+    background-color: #19a97b;
+    font-size: 16px;
+}
+    header .bottom .content{
+        width: 1200px;
+        height: 36px;
+        /* background-color: deeppink; */
+        margin: 0 auto;
+    }
+    header .bottom .content .left>a,header .bottom .content .left .types{
+        float: left;
+        width: 118px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        color: white;
+        border-right: #107d54 1px solid;
+        /*  */
+        position: relative;
+    }
+    header .bottom .content .left>a:first-of-type{
+        background-color: #12976d;
+        border-left: #107d54 1px solid;
+        border-right: #107d54 1px solid;
+    }
+    span.triangle_up{
+        display: block;
+        width: 0;
+        height: 0;
+        border: transparent 4px solid;
+        border-bottom-color: white;
+        position: absolute;
+        top: 12px;
+        right: 28px;
+    }
+    span.triangle_down{
+        display: block;
+        width: 0;
+        height: 0;
+        border: transparent 4px solid;
+        border-top-color: white;
+        position: absolute;
+        top: 16px;
+        right: 13px;
+    }
+        header .bottom .content .left .type_list{
+            /* 不能用float写下拉菜单，会和其他浮动元素推挤@ */
+            width: 237px;
+            height: 379px;
+            border: #b6b6b6 1px solid;
+            border-top: none;
+            font-size: 13px;
+            line-height: 26px;
+            /*  */
+            position: absolute;
+            top: 36px;
+            /* 使边框贴合 */
+            right: -1px;
+        }
+            header .bottom .type_list dl{
+                width: 216px;
+                height: 70px;
+                margin-left: 13px;
+                border-bottom: #e6e6e6 1px solid;
+                text-align: left;
+                /* 清除子元素上外边距的影响 */
+                overflow: hidden;
+            }
+            header .bottom .type_list dl:last-child{
+                height: auto;
+                border-bottom: none;
+            }
+            header .bottom .type_list dt{
+                font-weight: bold;
+                position: relative;
+                /*  */
+                margin-top: 5px;
+            }
+                header .bottom .type_list dt span.arrow{
+                    width: 4px;
+                    height: 7px;
+                    background-position: 0 -102px;
+                    top: 10px;
+                    left: 57px;
+                }
+                header .bottom .type_list dt:hover span.arrow{
+                    background-position: -8px -102px;
+                }
+            header .bottom .type_list dd{
+                float: left;
+                margin-right: 10px;
+                position: relative;
+            }
+                /* header .bottom .type_list dd span.new */
+                dd span.new{
+                    width: 21px;
+                    height: 11px;
+                    background-position: 0 -116px;
+                    top: -5px;
+                    right: -19px;
+                }
+                /* header .bottom .type_list dd span.hot */
+                dd span.hot{
+                    width: 21px;
+                    height: 11px;
+                    background-position: 0 -128px;
+                    top: -5px;
+                    right: -19px;
+                }
+                header .bottom span.nav_hot{
+                    width: 21px;
+                    height: 11px;
+                    background-position: 0 -128px;
+                    top: 4px;
+                    right: 4px;
+                }
+/*  */
+header .bottom .content .right{
+    float: right;
+}
+header .bottom .content .right a{
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: white;
+    padding-left: 44px;
+    padding-right: 17px;
+    border-right: #107d54 1px solid;
+    /*  */
+    position: relative;
+}
+header .bottom .content .right a:first-child{
+    padding-right: 3px;
+}
+    header .bottom .content .right .tree{
+        width: 20px;
+        height: 20px;
+        background-position: 0 -20px;
+        top: 9px;
+        left: 18px;
+    }
+    header .bottom .content .right .vip{
+        width: 20px;
+        height: 20px;
+        background-position: 0 -44px;
+        top: 9px;
+        left: 18px;
+    }
+    header .bottom .content .right .my{
+        width: 20px;
+        height: 20px;
+        background-position: 0 -70px;
+        top: 9px;
+        left: 18px;
+    }
+    header .bottom .content .right .redpoint{
+        width: 4px;
+        height: 4px;
+        background-position: 0 -91px;
+        top: 7px;
+        right: 12px;
+    }
+    header .bottom .content .right .triangle_down{
+        /* 其他属性前面有 */
+        right: 6px;
+    }
+
+/*  */
+.body_1{
+    width: 100%;
+    min-width: 1200px;
+    height: 399px;
+    /* 不知道哪宽出来的一点@ */
+    overflow: hidden;
+    border-bottom: #e6e6e6 1px solid;
+}
+.body_1 .content{
+    width: 1200px;
+    height: 399px;
+    margin: 0 auto;
+}
+.body_1 .content .right_box{
+    width: 950px;
+    height: 372px;
+    margin-top: 8px;
+    float: right;
+    /* background-color: darkorange; */
+}
+    .body_1 .content .right_box .box1{
+        float: left;
+        width: 714px;
+        height: 372px;
+    }
+    .body_1 .content .right_box .box1>a{
+        display: block;
+        width: 704px;
+        height: 272px;
+        margin-right: 10px;
+    }
+        .body_1 .content .right_box .box1 a img{
+            width: 100%;
+            height: 100%;
+        }
+    .body_1 .content .right_box dl{
+        float: left;
+        width: 345px;
+        height: 90px;
+        margin-top: 8px;
+        margin-right: 10px;
+        border: #e6e6e6 1px solid;
+    }
+    .body_1 .content .right_box dl img{
+        float: left;
+        width: 128px;
+        height: 82px;
+        margin: 4px;
+    }
+    .body_1 .content .right_box dt{
+        float: left;
+        height: 22px;
+        line-height: 22px;
+        color: black;
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+    .body_1 .content .right_box dd{
+        float: left;
+        height: 22px;
+        line-height: 22px;
+        margin-left: 15px;
+    }
+    .body_1 .content .right_box dl a{
+        float: left;
+        width: 81px;
+        height: 26px;
+        line-height: 26px;
+        margin-top: 4px;
+        margin-left: 15px;
+        border: #e6e6e6 1px solid;
+        background-color: #f5f5f5;
+        text-align: center;
+    }
+/*  */
+.body_1 .content .right_box .upload{
+    float: left;
+    width: 234px;
+    height: 96px;
+    border: #e6e6e6 1px solid;
+}
+    .body_1 .content .right_box .upload label{
+        display: block;
+        width: 198px;
+        height: 40px;
+        margin: 10px auto;
+        background: url(../images/icon/bg_index_342b8d2.png) no-repeat 0 -64px;
+    }
+    .body_1 .content .right_box .upload label:hover{
+        background-position: 0 -106px;
+    }
+    .body_1 .content .right_box .upload input{
+        visibility: hidden;
+    }
+    .body_1 .content .right_box .upload div{
+        width: 234px;
+        height: 18px;
+        text-align: center;
+    }
+    .body_1 .content .right_box .upload div span{
+        font-size: 20px;
+        color: #874d2c;
+    }
+/*  */
+.body_1 .content .right_box .code{
+    float: left;
+    width: 234px;
+    height: 268px;
+    margin-top: 8px;
+    border: #e6e6e6 1px solid;
+    text-align: center;
+    color: black;
+}
+.body_1 .content .right_box .code .logo{
+    width: 234px;
+    height: 30px;
+    line-height: 18px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+    .body_1 .content .right_box .code .logo img{
+        vertical-align: bottom;
+        margin-right: 12px;
+    }
+.body_1 .content .right_box .code .code_img{
+    width: 120px;
+    height: 120px;
+    margin: 28px auto;
+    padding: 9px;
+    border: #e6e6e6 1px solid;
+}
+.body_1 .content .right_box .code a{
+    font-size: 15px;
+    color: #19a97b;
+}
+/* body_1结束 */
+.body_2{
+    width: 1200px;
+    height: 640px;
+    margin: 0 auto;
+    /* background-color: darkturquoise; */
+}
+.body_2 .line_1{
+    width: 1200px;
+    height: 137px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    border-bottom: #e6e6e6 2px solid;
+    /* background-color: darkred; */
+}
+    .body_2 .line_1 dl{
+        float: left;
+        width: 278px;
+        height: 75px;
+        margin-top: 30px;
+        margin-right: 30px;
+        border-right: #e6e6e6 1px dotted;
+    }
+    .body_2 .line_1 dl:last-of-type{
+        /* 杂乱的宽度 */
+        width: 273px;
+        margin-right: 0;
+        border: none;
+    }
+    .body_2 .line_1 dt{
+        height: 18;
+        line-height: 18px;
+        margin-bottom: 10px;
+        color: black;
+        font-weight: bold;
+    }
+    .body_2 .line_1 dd{
+        line-height: 27px;
+        float: left;
+        margin-right: 20px;
+        position: relative;
+        cursor: pointer;
+    }
+    /* new,hot图标由前面的通用 */
+/*  */
+.body_2 .line_2{
+    width: 1200px;
+    height: 276px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    /* background-color: darkred; */
+}
+    .body_2 .line_2 .title{
+        width: 100%;
+        height: 23px;
+        font-size: 23px;
+        color: black;
+        margin-bottom: 18px;
+    }
+    .body_2 .line_2 .title span{
+        font-size: 13px;
+        margin-left: 10px;
+    }
+        .body_2 .line_2 .title span b{
+            font-weight: normal;
+            color: #874d2c;
+        }
+    .body_2 .line_2 dl{
+        float: left;
+        width: 272px;
+        height: 227px;
+        padding: 3px;
+        margin-right: 26px;
+        border: #e6e6e6 1px solid;
+        position: relative;
+        cursor: pointer;
+    }
+    .body_2 .line_2 dl:last-of-type{
+        margin-right: 0;
+    }
+        .body_2 .line_2 dl span{
+            display: block;
+            line-height: 13px;
+            padding: 6px;
+            color: white;
+            background-color: #56c4a1;
+            position: absolute;
+            top: 3px;
+            left: 3px;
+        }
+        .body_2 .line_2 dl img{
+            display: block;
+            width: 272px;
+            height: 125px;
+        }
+        .body_2 .line_2 dt{
+            font-size: 16px;
+            height: 34px;
+            line-height: 34px;
+            color: black;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .body_2 .line_2 dd{
+            line-height: 22px;
+            margin-left: 20px;
+            margin-right: 30px;
+        }
+/*  */
+.body_2 .line_3{
+    width: 1200px;
+    height: 117px;
+    margin: 0 auto;
+    margin-bottom: 43px;
+    /* background-color: darkred; */
+}
+.body_2 .line_3 div{
+    float: left;
+    width: 280px;
+    height: 117px;
+    margin-right: 26px;
+    font-size: 16px;
+    line-height: 14px;
+    color: black;
+}
+.body_2 .line_3 div:last-of-type{
+    margin-right: 0;
+}
+    .body_2 .line_3 div a{
+        display: block;
+        width: 272px;
+        height: 80px;
+        padding: 3px;
+        margin-top: 15px;
+        border: #e6e6e6 1px solid;
+    }
+/*  */
+footer{
+    width: 100%;
+    min-width: 1200px;
+    height: 398px;
+    border-top: #e6e6e6 2px solid;
+    position: relative;
+}
+footer .title{
+    width: 1200px;
+    height: 28px;
+    margin: 0 auto;
+    margin-top: 38px;
+    margin-bottom: 30px;
+    color: black;
+    /* background-color: deeppink; */
+}
+    footer .title i{
+        /* 清除文字倾斜 */
+        font-style: normal;
+        font-size: 18px;
+        vertical-align: middle;
+    }
+    footer .title span{
+        font-size: 13px;
+        /* line-height: 28px; */
+        vertical-align: middle;
+        margin: 0 15px;
+    }
+        footer .title span b{
+            font-weight: normal;
+            color: #874d2c;
+        }
+    footer .title a{
+        display: inline-block;
+        width: 83px;
+        height: 28px;
+        font-size: 13px;
+        line-height: 28px;
+        text-indent: 20px;
+        background: url(../images/icon/bg_index_342b8d2.png) no-repeat 0 -3px;
+    }
+    footer .title a:hover{
+        background-position: 0 -33px;
+    }
+/*  */
+footer .logos{
+    width: 1200px;
+    height: 161px;
+    margin: 0 auto;
+    /* background-color: darkgreen; */
+}
+    footer .logos a{
+        float: left;
+        width: 170px;
+        height: 70px;
+        margin-right: 28px;
+        margin-bottom: 17px;
+        border: #e6e6e6 1px solid;
+    }
+    /* 逐个处理 */
+    footer .logos a:nth-child(1){
+        background: url(../images/logo001.jpg) no-repeat 10px 5px;
+    }
+    footer .logos a:nth-child(2){
+        background: url(../images/logo002.png) no-repeat 5px 5px;
+    }
+    footer .logos a:nth-child(3){
+        background: url(../images/logo003.png) no-repeat -50px -40px;
+    }
+    footer .logos a:nth-child(4){
+        background: url(../images/logo004.png) no-repeat 0px 5px;
+    }
+    footer .logos a:nth-child(5){
+        background: url(../images/logo005.jpg) no-repeat 10px 5px;
+    }
+    footer .logos a:nth-child(6){
+        background: url(../images/logo006.jpg) no-repeat 0px 0px;
+    }
+    footer .logos a:nth-child(7){
+        background: url(../images/logo007.png) no-repeat 5px 3px;
+    }
+    footer .logos a:nth-child(8){
+        background: url(../images/logo008.png) no-repeat 10px 5px;
+    }
+    footer .logos a:nth-child(9){
+        background: url(../images/logo009.png) no-repeat 0px 5px;
+    }
+    footer .logos a:nth-child(10){
+        background: url(../images/logo010.jpg) no-repeat -10px -10px;
+    }
+    footer .logos a:nth-child(11){
+        background: url(../images/logo011.jpg) no-repeat 0px 5px;
+    }
+    footer .logos a:nth-child(12){
+        background: url(../images/logo012.png) no-repeat 0px 0px;
+    }
+/*  */
+footer .site_msg{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 12px;
+}
+footer .site_msg span{
+    line-height: 26px;
+}
+    footer .site_msg span a{
+        color: #2d64b3;
+    }
+footer .aside{
+    width: 55px;
+    height: 287px;
+    /* 粘性定位 */
+    position: absolute;
+    top: 26px;
+    right: 10px;
+    /* 弹性布局试用@ */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+    footer .aside div{
+        width: 53px;
+        height: 53px;
+        border: #d7d7d7 1px solid;
+        text-align: center;
+    }
+    footer .aside div:first-child{
+        background-color: #d1b06f;
+    }
+        footer .aside div span{
+            position: relative;
+            top: 32px;
+        }
+        footer .aside div:first-child span{
+            color: white;
+            line-height: 13px;
+            position: relative;
+            top: 10px;
+        }
+/* *****footer结束******* */
