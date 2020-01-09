@@ -1,0 +1,200 @@
+﻿*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul, ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	vertical-align: top;
+	border: none;
+}
+/*  */
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    color: #8d8d8d;
+    letter-spacing: 0.02rem;
+}
+/*  */
+header{
+    height: 0.89rem;
+    padding: 0 0.2rem;
+    background-color: white;
+    /*  */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .icon-xiaoxi{
+    font-size: 0.4rem;
+}
+header .search{
+    width: 5.83rem;
+    height: 0.59rem;
+    position: relative;
+}
+    header .search .icon-search3{
+        font-size: 0.26rem;
+        line-height: 0.59rem;
+        position: absolute;
+        left: 0.26rem;
+    }
+    header .search input{
+        width: 5.83rem;
+        height: 0.59rem;
+        border: #e6e6e6 0.01rem solid;
+        border-radius: 0.02rem;
+        outline: none;
+        padding-left: 0.79rem;
+        font-size: 0.26rem;
+    }
+header .icon-scan_icon{
+    font-size: 0.34rem;
+}
+/*  */
+nav{
+    height: 0.53rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.26rem;
+}
+nav span{
+    height: 0.5rem;
+    line-height: 0.5rem;
+    text-align: center;
+}
+nav span.down{
+    width: 0.23rem;
+    height: 0.13rem;
+    background: url(../images/down.jpg) no-repeat 0 0;
+    background-size: 100% 100%;
+}
+nav span:first-child{
+    border-bottom: #ff4500 0.04rem solid;
+}
+/*  */
+.main{
+    /* 内容可滚动 */
+    flex: 1;
+    overflow: auto;
+}
+.main1{
+    height: 5.3rem;
+    margin: 0 auto;
+    padding-top: 0.03rem;
+    padding-bottom: 0.15rem;
+    background-color: #f5f5f5;
+    box-sizing: content-box;
+}
+.main1 .box1{
+    width: 3.73rem;
+    height: 5.3rem;
+    float: left;
+    margin-right: 0.04rem;
+}
+.main1 .box2,.main1 .box3{
+    width: 3.72rem;
+    height: 2.63rem;
+    float: left;
+}
+.main1 .box2{
+    margin-bottom: 0.04rem;
+}
+/*  */
+.main2{
+    height: 10rem;
+    /* background-color: dodgerblue; */
+}
+.main2 .title{
+    height: 0.83rem;
+        /* 行高可继承给子元素@ */
+    line-height: 0.83rem;
+    padding: 0 0.31rem;
+    display: flex;
+}
+    .main2 .title span:nth-child(1){
+        font-size: 0.34rem;
+        font-weight: bold;
+        color: #4c4c4c;
+        flex: 1
+    }
+    .main2 .title span:nth-child(2){
+        font-size: 0.22rem;
+    }
+    .main2 .title span:nth-child(3){
+        font-size: 0.4rem;
+    }
+/*  */
+.main2 .pic{
+    width: 6.89rem;
+    height: 3.44rem;
+    margin: 0 auto;
+}
+.main2 .people{
+    width: 6.89rem;
+    margin:  0 auto;
+}
+.main2 .people>span{
+    line-height: 0.67rem;
+    font-size: 0.24rem;
+    color: black;
+}
+.main2 .people .line{
+    width: 100%;
+    height: 0.05rem;
+    background-color: #f99003;
+    border-radius: 0.03rem;
+}
+.main2 .people .num{
+    line-height: 0.44rem;
+    font-size: 0.18rem;
+}
+.main2 .people .num span:last-child{
+    color: #f99003;
+    float: right;
+}
+
+/*  */
+footer{
+    height: 1.06rem;
+    display: flex;
+    /* 无法垂直居中？ */
+    align-items: center;
+    font-size: 0.19rem;
+    box-sizing: content-box;
+    border-top: #e5e5e5 0.01rem solid;
+    background-color: white;
+}
+footer div{
+    width: 20%;
+    height: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+footer div .iconfont{
+    height: 0;
+    font-size: 0.41rem !important;
+}
+footer div .icon-chazhao{
+    line-height: 0.5rem;
+    font-size: 0.6rem !important;
+}
+footer div .icon-gouwuche{
+    line-height: 0.4rem;
+    font-size: 0.5rem !important;
+}
+footer div b{
+    font-weight: normal;
+}
