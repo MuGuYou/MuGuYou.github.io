@@ -47,6 +47,7 @@
     <dl class="checknew_dl">
         <li class="crt_2">
 <!--             <img src="https://www.alpacadisk.com/shared/UIDrPnaA2SV1OeEc" width="300px"/> -->
+            <span class="versionInfo">1.01</span>
             <a href="https://www.alpacadisk.com/file/su5m57fj9p1ival5-Kyo-KOF02UM.zip/public/LRvZ21n66kuOqqBJ" download="fileName" target="_blank">羊驼网盘直链</a>
             <a href="https://tenapi.cn/lanzou/?url=https://wwu.lanzouw.com/iygH306z2aba&type=down" download="fileName" target="_blank">蓝奏云直链，type=down为直接下载</a>
             <a href="https://jiangbohu.coding.net/p/gongkaiwu/d/jiangbohu/git/raw/master/chars/mz.zip" download="fileName" target="_blank">coding代码仓库</a>
@@ -61,14 +62,4 @@
     </dl>
 <script>
     console.log('checkOver')
-    var reqV = new XMLHttpRequest()
-    var listV = ''
-    reqV.open('GET', "http://47.100.15.164/biliapi/x/v3/fav/resource/list?media_id=312295654&pn=1&ps=20&keyword=&order=mtime&type=0&tid=0&platform=web&jsonp=jsonp", true)
-    reqV.send(null)
-    reqV.onreadystatechange = function() {// 必要，监听状态码改变，异步核心
-        if (reqV.readyState == 4 && reqV.status == 200) {
-            // element.innerHTML
-            console.log(reqV.responseText)
-        }
-    }
 </script>
