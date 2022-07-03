@@ -4,18 +4,18 @@
         padding: 0;
         background-color: white;
     }
-    #page5 ul {
+    ul {
         width: 100%;
         height: 50px;
     }
-    #page5 ul li{
+    ul li{
             list-style: none;
             float: left;
             width: 20%;
             height: 30px;
             background-color: aqua;
         }
-    #page5 dl li{
+    dl li{
         list-style: none;
         width: 100%;
         min-height: 500px;
@@ -26,10 +26,10 @@
         display: block;
         color: red;
     }
-    #page5 .act_2{
+    .act_2{
         background-color: brown;
     }
-    #page5 .crt_2{
+    .crt_2{
         display: block;
     }
 </style>
@@ -55,6 +55,15 @@
         <li></li>
     </dl>
 <script>
-    console.log(1561568)
-    document.querySelector("#page5>div").remove()
+    console.log(checkOver)
+    var reqV = new XMLHttpRequest()
+    var listV = ''
+    reqV.open('GET', "http://47.100.15.164/biliapi/x/v3/fav/resource/list?media_id=312295654&pn=1&ps=20&keyword=&order=mtime&type=0&tid=0&platform=web&jsonp=jsonp", true)
+    reqV.send(null)
+    reqV.onreadystatechange = function() {// 必要，监听状态码改变，异步核心
+        if (reqV.readyState == 4 && reqV.status == 200) {
+            // element.innerHTML
+            console.log(reqV.responseText)
+        }
+    }
 </script>
