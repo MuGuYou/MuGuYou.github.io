@@ -10,26 +10,41 @@
     #page4 ul li{
             list-style: none;
             float: left;
-            width: 20%;
+            /* width: 20%; */
+            width: 150px;
             height: 30px;
-            background-color: aqua;
+            line-height: 30px;
+            text-align: center;
+            background-color: #eee;
         }
     #page4 dl li{
         list-style: none;
         width: 100%;
         min-height: 500px;
-        //background-color: blueviolet;
         display: none;
     }
-    #page4 .checknew_dl li>a{
-        display: block;
-        color: red;
+    #page4 .checknew_dl .links a{
+        float: left;
+        padding: 5px 10px;
+        margin-right: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        background-color: darkkhaki;
+        border-radius: 3px;
     }
     #page4 .act_2{
-        background-color: brown;
+        font-weight: bold;
+        background-color: #ccc;
     }
     #page4 .crt_2{
         display: block;
+    }
+    #page4 #updatePage dt i{
+        font-style: normal;
+        font-size: 12px;
+        color: red;
+        padding-left: 1em;
     }
 </style>
     <head>
@@ -38,26 +53,57 @@
     </head>
     <ul class="checknew_ul">
         <li class="act_2">检查更新</li>
-        <li>更新历史</li>
         <li>使用技巧</li>
-        <li>其他</li>
         <li>作者动态</li>
     </ul>
-    <br>
     <dl class="checknew_dl">
-        <li class="crt_2">
-<!--             <img src="https://www.alpacadisk.com/shared/UIDrPnaA2SV1OeEc" width="300px"/> -->
-            <span class="versionInfo">1.01</span>
-            <a href="https://www.alpacadisk.com/file/su5m57fj9p1ival5-Kyo-KOF02UM.zip/public/LRvZ21n66kuOqqBJ" download="fileName" target="_blank">羊驼网盘直链</a>
-            <a href="https://tenapi.cn/lanzou/?url=https://wwu.lanzouw.com/iygH306z2aba&type=down" download="fileName" target="_blank">蓝奏云直链，type=down为直接下载</a>
-            <a href="https://jiangbohu.coding.net/p/gongkaiwu/d/jiangbohu/git/raw/master/chars/mz.zip" download="fileName" target="_blank">coding代码仓库</a>
-            <a href="https://jiangbohu.coding.net/s/684df6f0-12db-4210-aad7-3927c4c11d2f" target="_blank">coding文件网盘</a>
+        <li class="crt_2" id="updatePage">
+            <h1 class="versionInfo" history='0.97 0.99 1.00 1.01'>1.01</h1>
+            <br>
+            <div>
+                <dt><b>1.01<i></i></b>2022-07-04</dt>
+                <dd>
+                    ● 虎虎虎关乎恶化骨灰耨给i回顾返回并规划户数男生话说你比较可靠奴随v还是你好吧v祭祀变化多端的<br>
+                    ● 付费hi的撒你回归反坦克i就发v面馆复古风格方法给一个擦更高版本官方萨格<br>
+                </dd>
+            </div>
+            <br>
+            <span>Download links：</span>
+            <div class="links" style="overflow: hidden;margin: 10px 0;">
+                <a href="https://www.alpacadisk.com/file/su5m57fj9p1ival5-Kyo-KOF02UM.zip/public/LRvZ21n66kuOqqBJ" download="fileName" target="_blank" style="background-color: #0cc26d;">下载地址1</a>
+                <a href="https://tenapi.cn/lanzou/?url=https://wwu.lanzouw.com/iygH306z2aba&type=down" download="fileName" target="_blank" style="background-color: #44abff;">下载地址2</a>
+                <a href="https://jiangbohu.coding.net/s/684df6f0-12db-4210-aad7-3927c4c11d2f" target="_blank">备用网盘</a>
+            </div>
+            <h2>更新历史：</h2>
+            <dt><b>1.00<i></i></b>2022-07-04</dt>
+            <dd>
+                ● 虎虎虎关乎恶化骨灰耨给i回顾返回并规划户数男生话说你比较可靠奴随v还是你好吧v祭祀变化多端的<br>
+                ● 付费hi的撒你回归反坦克i就发v面馆复古风格方法给一个擦更高版本官方萨格<br>
+            </dd><br>
+            <dt><b>0.99<i></i></b>2022-07-04</dt>
+            <dd>
+                ● 虎虎虎关乎恶化骨灰耨给i回顾返回并规划户数男生话说你比较可靠奴随v还是你好吧v祭祀变化多端的<br>
+                ● 付费hi的撒你回归反坦克i就发v面馆复古风格方法给一个擦更高版本官方萨格<br>
+            </dd><br>
+            <dt><b>0.97<i></i></b>2022-07-04</dt>
+            <dd>
+                ● 虎虎虎关乎恶化骨灰耨给i回顾返回并规划户数男生话说你比较可靠奴随v还是你好吧v祭祀变化多端的<br>
+                ● 付费hi的撒你回归反坦克i就发v面馆复古风格方法给一个擦更高版本官方萨格<br>
+            </dd><br>
         </li>
+        <!--  -->
         <li>
-
+            <b>手操技巧</b>
+            <p>
+                ● 同时按住↙↓↘ + y，对手不管在身前还是身后都能出<u>头上拂</u>，之后↓→ + a，正向会出<u>根反</u>，反向会出<u>超受身</u>，都可接<u>地雷震</u>
+            </p>
+            <p>
+                ● 简化的<u>天地反</u>：↘←→ + y，可用于跑动中和<u>头上拂</u>打中
+            </p>
+            <p>
+                ● <u>大气切割</u>可打中<u>切株返</u>不能追加的情况，常用连段：切株返-地雷震-大气切割
+            </p>
         </li>
-        <li></li>
-        <li></li>
         <li></li>
     </dl>
 <script>
