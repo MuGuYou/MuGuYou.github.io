@@ -59,7 +59,7 @@
 </ul>
 <dl class="checknew_dl">
     <li class="crt_2" id="updatePage">
-        <h1 class="versionInfo" history='0.97 0.99 1.00 1.01'>1.01</h1>
+        <h1 class="versionInfo" history="0.97 0.99 1.00 1.01">1.01</h1>
         <br>
         <div>
             <dt><b>1.01<i></i></b>2022-07-04</dt>
@@ -120,9 +120,16 @@
             }
         }
         var tipIcon = document.querySelector('nav .hasUpdate')
+        if (versionInfo.hasAttribute("stop")) {
+            tipIcon.style.backgroundPosition = '0 -34px'
+            versionInfo.innerHTML = '已停止公开 🛑<br>has stopped publishing'
+            versionInfo.style.color = '#999'
+            document.querySelector('#page4 .links').innerHTML = ''
+            return
+        }
         if (versionInfo.innerHTML - crtVersion > 0) {
             var needUpdate = versionInfo.innerHTML.slice(0,3) - crtVersion.slice(0,3) > 0//省去一位小数后比较
-            tipIcon.style.backgroundPosition = needUpdate? '0 -32px': '0 -18px'
+            tipIcon.style.backgroundPosition = needUpdate? '0 -26px': '0 -18px'
             versionInfo.innerHTML = needUpdate? '需要更新！<br>Have important update': '不必要的更新<br>Unnecessary update'
             versionInfo.style.color = needUpdate? 'red': '#e59400'
             return
